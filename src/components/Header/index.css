@@ -1,0 +1,102 @@
+.nav-header {
+  box-shadow: 0px 10px 10px -15px #111;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-header a {
+  text-decoration: none;
+}
+
+.logo-heading {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 25px;
+  color: #1f1f1f;
+}
+
+@media screen and (max-width: 576px) {
+  .logo-heading {
+    font-size: 15px;
+    padding-right: 20%;
+  }
+  .my-orders-text {
+    display: none;
+  }
+  .logout-button {
+    margin-left: 0px;
+  }
+  .nav-header {
+    justify-content: space-around;
+  }
+  .my-order-container {
+    justify-content: space-around;
+    margin-right: 20px;
+  }
+}
+
+.my-orders-text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  color: #585555;
+  text-decoration: none;
+}
+
+.cart-icon-link {
+  position: relative;
+}
+
+.cart-icon-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.cart-icon {
+  font-size: 35px;
+  color: #585555;
+}
+
+.cart-count-badge {
+  background-color: #ff6347;
+  position: absolute;
+  top: -13px;
+  right: -8px;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.cart-count {
+  text-align: center;
+  color: #ffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+}
+.my-order-container {
+  width: 20%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.logout-button {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  margin-left: 20px;
+}
